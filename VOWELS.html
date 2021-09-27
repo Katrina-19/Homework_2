@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>VOWELS</title>
+  </head>
+  <body>
+    <div></div>
+ </body>
+ <script>
+function sumV() {
+	var arr= prompt('Введите строку').toLowerCase().split('');
+	var sum = 0;
+	for (var i=0; i<arr.length; i++) {
+		item = arr[i];
+		if (item === 'а' ||
+			item === 'о' ||
+			item === 'и' ||
+			item === 'е' ||
+			item === 'ё' ||
+			item === 'э' ||
+			item === 'ы' ||
+			item === 'у' ||
+			item === 'ю' ||
+			item === 'я') {
+			sum++;
+		};
+	} return sum;
+}
+
+console.log(sumV());
+</script>
+</html>
